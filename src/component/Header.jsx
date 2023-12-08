@@ -10,8 +10,8 @@ import logo from "../assets/atg-logo.svg"
 // import rectangle from "../assets/rectangle.png"
 import rectangle from "../assets/Rectangle.png";
 
-import oval from "../assets/oval.png"
-import Path from "../assets/path.png"
+import oval from "../assets/Oval.png"
+import Path from "../assets/Path.png"
 
 const Header = () => {
     return (
