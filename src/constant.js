@@ -6,7 +6,7 @@ import cardImg3 from "./assets/cardImg3.svg"
 import sarthak from "./assets/sarthak.png"
 import sarah from "./assets/sarah.png"
 import ronalJones from "./assets/ronalJones.png"
-import joseph from "./assets/Joseph.png"
+import joseph from "./assets/joseph.png"
 
 export const cardContent = [
     {
