@@ -7,7 +7,9 @@ import Col from 'react-bootstrap/Col';
 import { IoMdSearch } from "react-icons/io";
 import { FaCaretDown } from "react-icons/fa";
 import logo from "../assets/atg-logo.svg"
-import rectangle from "../assets/rectangle.png"
+// import rectangle from "../assets/rectangle.png"
+import rectangle from "../assets/rectangle.png";
+
 import oval from "../assets/oval.png"
 import Path from "../assets/path.png"
 
