@@ -19,9 +19,15 @@ import "./compoStyle/PostArea.css"
 
 const PostArea = () => {
     const [dotClick, setDotClick] = useState(false)
+    const [boxPosition, setBoxPosition] = useState({top:0, right:0})
 
     const dotClickHandler = () => {
         setDotClick(!dotClick)
+        const dotPosition = event.target.getBoundingClientRect();
+        setBoxPosition({
+            top: dotPosition.bottom + window.scrollY,
+            right: window.innerWidth - dotPosition.right + window.scrollX,
+        })
     }
 
 
@@ -119,7 +125,7 @@ const PostArea = () => {
 
                                             <div className="mobile-card-userDetails">
                                                 <div className="leftDetail">
-                                                    <img src={card.image} alt="card1-UserImg" />
+                                                    <img src={card.usserImg} alt="card1-UserImg" />
                                                     <div className="img-right">
                                                         <h3>{card.cardHeadingPara}</h3>
                                                         <p>{card.views}</p>
@@ -166,7 +172,7 @@ const PostArea = () => {
 
             {
                 dotClick && (<>
-                    <div className="box">
+                    <div className="box" style={{ top: boxPosition.top, right: boxPosition.right }}>
                         <ul>
                             <li>Edit</li>
                             <li>Report</li>

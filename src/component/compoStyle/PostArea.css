@@ -215,6 +215,7 @@ Button>img {
     border-radius: 50%;
     pointer-events: none;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .rightDetail {
